@@ -20,20 +20,52 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
+  @media (max-width: 600px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .lists__arrow--width{
   margin-left: 12px;
+  margin-right: 12px;
   width: 51px;
+  min-width: 21px;
+  @media (max-width: 600px) {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 15px;
+    & svg{
+      width: 15px;
+    }
+  }
 }
 
 .lists__name--width{
   width: 340px;
+  margin-right: 5px;
+  min-width: 95px;
+  @media (max-width: 600px) {
+    min-width: 80px;
+  }
 }
 .lists__email--width{
   width: 386px;
+  min-width: 185px;
+  @media (max-width: 600px) {
+    min-width: 160px;
+  }
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 .lists__phone--width{
   width: 439px;
+  min-width: 101px;
+  margin-right: 5px;
+  @media (max-width: 600px) {
+    min-width: 85px;
+  }
 }
 .lists__website--width{
   width: 400px;
@@ -44,6 +76,14 @@
   padding-right: 60px;
   display: flex;
   position: relative;
+  @media (max-width: 991px) {
+    margin-left: 0;
+    padding-right: 45px;
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    padding-right: 35px;
+  }
 }
 .lists__edit-wrapper{
   width: 500px;
@@ -56,21 +96,36 @@
   display: flex;
   align-items: center;
   padding-left: 32px;
+  @media (max-width: 600px) {
+    height: 30px;
+    padding-left: 16px;
+  }
 }
-.lists__edit-form{
+.lists__form{
   border: 1px solid #D9DBDA;
   border-radius: 4px;
   padding: 18px 31px 0 32px;
   height: 364px;
+  @media (max-width: 991px) {
+    padding: 18px 15px 0 15px;
+  }
+  @media (max-width: 600px) {
+    padding: 8px 5px 0 5px;
+    margin-bottom: 10px;
+    height: auto;
+  }
 }
 .lists__input-wrapper{
   margin-bottom: 10px;
 }
-.lists__input-label{
+.lists__label{
   font-size: 12px;
   line-height: 14px;
   opacity: 0.5;
   margin-bottom: 7px;
+  @media (max-width: 600px) {
+    margin-bottom: 5px;
+  }
 }
 .lists__input{
   border: 1px solid #D9DBDA;
@@ -79,8 +134,14 @@
   width: 100%;
   background: #F5F5F5;
   padding-left: 18px;
+  @media (max-width: 600px) {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 8px;
+    height: 30px;
+  }
 }
-.lists__edit-btn{
+.lists__btn{
   position: absolute;
   right: 0;
   width: 41.69px;
@@ -93,4 +154,8 @@
   outline: none;
   border: none;
   cursor: pointer;
+  @media (max-width: 600px) {
+    width: 30px;
+    height: 30px;
+  }
 }

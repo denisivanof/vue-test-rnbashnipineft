@@ -12,10 +12,8 @@
 </template>
 
 <script setup lang="ts">
-
 import UsersLists from "../components/UsersLists.vue";
 </script>
-
 <style scoped lang="scss">
 @import "../styles/users.scss";
 </style>
